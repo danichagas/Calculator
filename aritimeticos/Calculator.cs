@@ -8,7 +8,6 @@ namespace aritimeticos
 {
     public class Calculator
     {
-
         public void Somar(int x, int y)
         {
             Console.WriteLine($"{x} + {y} = {x + y}");
@@ -27,6 +26,12 @@ namespace aritimeticos
         public void Dividir(int x, int y)
         {
             Console.WriteLine($"{x} / {y} = {x / y}");
+        }
+
+        public void Potencia(int x, int y)
+        {
+            double potencia = Math.Pow(x,y);
+            Console.WriteLine($"{x} ^ {y} = {potencia}");
         }
     }
 }
